@@ -49,7 +49,6 @@
 // console.log(Number(value));
 // console.log(Number(5/0));
 
-
 // console.log(Math);
 // const base = 2;
 // const power = 5;
@@ -60,8 +59,6 @@
 // console.log(Math.pow(base, power));
 
 // console.log(2 ** 3);
-
-
 
 // --------- задачка
 
@@ -76,7 +73,6 @@
 // const result = base ** power;
 // console.log(result);
 
-
 // ---- ot 0 do 1
 // console.log(Math.random());
 
@@ -88,8 +84,6 @@
 // console.log(Math.round(1.488));
 // console.log(result);
 // console.log(Math.random() * (50 - 30) + 30);
-
-
 
 // ----просто пример на будущее
 // const colors = ['tomato', 'teal', 'orange', 'deeppink', 'skyblue'];
@@ -103,9 +97,6 @@
 // console.log(color);
 
 // document.body.style.backgroundColor = color;
-
-
-
 
 // ----STRING-----
 
@@ -130,7 +121,6 @@
 // const orderMsg = `kjlkj dfdf ${5 + 5} dfldfkj oiuiu ${room}`;
 // console.log(orderMsg);
 
-
 // ---нормализация
 // let brand = prompt('Введи бренд');
 // brand = brand.toLowerCase();
@@ -144,9 +134,6 @@
 // brand = brand[0] + brand.slice(1).toLowerCase();
 
 // console.log(brand);
-
-
-
 
 // const blacklistedWord1 = 'spam';
 // const blacklistedWord2 = 'sales';
@@ -165,8 +152,6 @@
 
 // console.log(string3.includes(blacklistedWord1));
 // console.log(string3.includes(blacklistedWord2));
-
-
 
 // ----ОПЕРАТОРЫ СРАВНЕНИЯ
 // console.log(5 > 15);
@@ -190,8 +175,6 @@
 
 // console.log(!false);
 
-
-
 // -------ЗАДАЧИ
 // 1 (1-4)
 // const x1 = 10;
@@ -208,7 +191,6 @@
 // const result2 = number < x1 || number > x2;
 // console.log(`Число ${number} попадает в отрезок до ${x1} или больше ${x2}?`, result2);
 
-
 // 2
 // const isOnline = true;
 // const isFriend = true;
@@ -217,14 +199,12 @@
 // const canOpenChat = isOnline && isFriend && !isDnd;
 // console.log('Можно открыть чат?', canOpenChat);
 
-
 // 3
 // const subscription = 'pro';
 
 // const canAccessContent = subscription === 'pro' || subscription === 'vip';
 
 // console.log('Есть доступ к контенту?', canAccessContent);
-
 
 // --------IF , тернарный
 // const balance = 1000;
@@ -247,5 +227,219 @@
 
 // console.log(a);
 
+// ---ЦИКЛ
+
+const stars = 2;
+let price;
+
+// if (stars === 1) {
+//     price = 20;
+// } else if (stars === 2) {
+//     price = 30;
+// } else if (stars === 3) {
+//     price = 50;
+// } else if (stars === 4) {
+//     price = 70;
+// } else if (stars === 5) {
+//     price = 120;
+// } else {
+//     console.log('Такого кол-ва звезд нет');
+// }
+
+// switch (stars) {
+//   case 1:
+//     price = 20;
+//     break;
+
+//   case 2:
+//     price = 30;
+//     break;
+
+//   case 3:
+//     price = 50;
+//     break;
+
+//   case 4:
+//     price = 70;
+//     break;
+
+//   case 5:
+//     price = 120;
+//     break;
+
+//   default:
+//     console.log('Такого кол-ва звезд нет');
+// }
+
+//  if (stars === 1 || stars === 2) {
+//         price = 20;
+//     } else if (stars === 3 || stars === 4) {
+//         price = 30;
+//     } else if (stars === 5) {
+//         price = 120;
+//     } else {
+//         console.log('Такого кол-ва звезд нет');
+//     }
+
+// switch (stars) {
+//   case 1:
+//   case 2:
+//     price = 20;
+//     break;
+
+//   case 3:
+//   case 4:
+//     price = 30;
+//     break;
+
+//   case 5:
+//     price = 120;
+//     break;
+
+//   default:
+//     console.log("Такого кол-ва звезд нет");
+// }
+
+// console.log(price);
 
 // ---задача
+
+// const option = 1;
+// let message = '';
+
+// switch (option) {
+//   case 1:
+//     message = "dfsf";
+//     break;
+//   case 2:
+//     message = "oiuoijhjn";
+//     break;
+//   case 3:
+//     message = "jhkjh";
+//     break;
+//   default:
+//     message = "xcvxbcxfd";
+// }
+
+// console.log(message);
+
+// ---FOR цикл
+
+// const minSalary = 500;
+// const maxSalary = 5000;
+// const employees = 3;
+// let totalSalary = 0;
+
+// for (let i = 1; i <= employees; i += 1) {
+//   const salary = Math.round(
+//     Math.random() * (maxSalary - minSalary) + minSalary
+//   );
+//   console.log(`ЗП работника номер ${i} - ${salary}`);
+
+//   totalSalary += salary;
+
+// }
+
+// console.log('totalSalary: ', totalSalary);
+
+// const min = 0;
+// const max = 10;
+// let total = 0;
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 2 !== 0) {
+//         console.log('Не четное: ', i);
+//         continue;
+//     }
+
+//     console.log('четное: ', i);
+//     total += i;
+// }
+
+// console.log('total: ', total);
+
+// ----ЗАДАЧИ с прошлого занятия
+
+// let balance = 10000;
+// const payment = 2000;
+
+// console.log(
+//   `Общая стоимость заказа ${payment} кредитов. Проверяем кол-во доступных средств на счету`
+// );
+
+// if (payment <= balance) {
+//     console.log('ok');
+//     balance -= payment;
+//     console.log('Все хорошо, снимаем деньги... Спасибо за покупку!');
+//     console.log(`На счету осталось ${balance} кредитов`);
+// } else {
+//   console.log(`На счету недостаточно средств для проведения операции`);
+// }
+// console.log("Операция завершена");
+
+
+
+// let totalSpent = 5000;
+// let payment = 500;
+// let discount = 0;
+
+// if (totalSpent >= 100 && totalSpent < 1000) {
+//     console.log('Бронзовый партнер, скидка 2%');
+//     discount = 0.02;
+// } else if (totalSpent >= 1000 && totalSpent < 5000) {
+//     console.log('Серебрянный партнер, скидка 5%');
+//     discount = 0.05;
+// } else if (totalSpent >= 5000) {
+//     console.log('Золотой партнер, скидка 10%');
+//     discount = 0.1;
+// } else {
+//         console.log('Не партнер, скидка 0%');
+//     }
+
+// payment -= payment * discount;
+
+// console.log(`Оформляем заказ на сумму ${payment} со скидкой ${discount * 100}%`);
+
+// totalSpent += payment;
+
+// console.log(`Общая сумма потраченого в магазине: ${totalSpent}`);
+
+
+// --------
+// КНОПКА
+
+const btnAdd =  document.querySelector('button[data-add]');
+const resetBtn = document.querySelector('button[data-reset]');
+const valueInput =  document.querySelector('input[data-value]');
+const outputEl = document.querySelector('.js-output span');
+
+// console.log(outputEl);
+
+let total = 0;
+
+btnAdd.addEventListener('click', () => {
+    console.log('click hehehehe');
+
+    // console.log(valueInput.value);
+    // console.log(typeof valueInput.value);
+    const value = Number(valueInput.value);
+    console.log(value);
+
+    total += value;
+    outputEl.textContent = total;
+
+    // console.log('total: ', total);
+
+    valueInput.value = '';
+})
+
+resetBtn.addEventListener('click', function () {
+    total = 0;
+    outputEl.textContent = total;
+})
+// console.log(btnAdd);
+// console.dir(btnAdd.textContent);
+// btnAdd.textContent = 'xsdfsdfdf';
+// console.dir(btnAdd);
+
+// console.log(valueInput);
