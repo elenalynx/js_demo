@@ -408,38 +408,96 @@ let price;
 // --------
 // КНОПКА
 
-const btnAdd =  document.querySelector('button[data-add]');
-const resetBtn = document.querySelector('button[data-reset]');
-const valueInput =  document.querySelector('input[data-value]');
-const outputEl = document.querySelector('.js-output span');
+// const btnAdd =  document.querySelector('button[data-add]');
+// const resetBtn = document.querySelector('button[data-reset]');
+// const valueInput =  document.querySelector('input[data-value]');
+// const outputEl = document.querySelector('.js-output span');
 
 // console.log(outputEl);
 
-let total = 0;
+// let total = 0;
 
-btnAdd.addEventListener('click', () => {
-    console.log('click hehehehe');
+// btnAdd.addEventListener('click', () => {
+//     console.log('click hehehehe');
 
-    // console.log(valueInput.value);
-    // console.log(typeof valueInput.value);
-    const value = Number(valueInput.value);
-    console.log(value);
+//     // console.log(valueInput.value);
+//     // console.log(typeof valueInput.value);
+//     const value = Number(valueInput.value);
+//     console.log(value);
 
-    total += value;
-    outputEl.textContent = total;
+//     total += value;
+//     outputEl.textContent = total;
 
-    // console.log('total: ', total);
+//     // console.log('total: ', total);
 
-    valueInput.value = '';
-})
+//     valueInput.value = '';
+// })
 
-resetBtn.addEventListener('click', function () {
-    total = 0;
-    outputEl.textContent = total;
-})
+// resetBtn.addEventListener('click', function () {
+//     total = 0;
+//     outputEl.textContent = total;
+// })
 // console.log(btnAdd);
 // console.dir(btnAdd.textContent);
 // btnAdd.textContent = 'xsdfsdfdf';
 // console.dir(btnAdd);
 
 // console.log(valueInput);
+
+
+function getShippingCost(country) {
+    let price;
+    let message;
+    
+    // Change code below this line
+    switch (country) {
+      case "China":
+        price = 100;
+        break;
+      case "Chile":
+        price = 250;
+        break;
+      case "Australia":
+        price = 170;
+        // message = `Shipping to ${country} will cost ${price} credits`;
+        break;
+      case "Jamaica":
+        price = 120;
+        break;
+  
+      default:
+      return "Sorry, there is no delivery to your country";
+    }
+
+    message = `Shipping to ${country} will cost ${price} credits`;
+    // Change code above this line
+    return message;
+  }
+
+ console.log(getShippingCost("Australiaa"));
+
+//  function formatMessage(message, maxLength) {
+//     let result;
+//     // Change code below this line
+//       result = message.length <= maxLength ? result = message : result = message.slice(0, maxLength) + '...';
+      
+//     /// Change code above this line
+//     return result;
+//   }
+
+//   console.log(formatMessage('Curabitur ligula sapien', 23));
+
+
+  function checkForSpam(message) {
+    let result;
+    // Change code below this line
+    const spam = "spam";
+    const sale = "sale";
+    message = message.toLowerCase();
+    // result = message.includes('spam');
+    result = message.includes(spam) || message.includes(sale);
+    // Change code above this line
+    return result;
+  }
+  
+  console.log(checkForSpam("dfs spAm"));
